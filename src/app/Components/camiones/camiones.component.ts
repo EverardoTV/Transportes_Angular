@@ -22,4 +22,8 @@ constructor(private service: CamionesService){
 get listacamiones(){
   return this.service.listacamiones;
   }
+
+eliminarCamion(id: any){
+  this.service.deleteCamion(id);
+}
 }
